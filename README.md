@@ -3,9 +3,10 @@
 Official TypeScript client and CLI for the [Gifi](https://gifi.ai) API: inspect,
 clean and rewrite AI provenance marks in text and files.
 
-This is the published source of the [gifi-sdk](https://www.npmjs.com/package/gifi-sdk) npm
-package. Gifi itself is closed source; this client is not, because you should be
-able to read what you are running against your own data.
+The source of the [gifi-sdk](https://www.npmjs.com/package/gifi-sdk) npm
+package, mirrored to <https://github.com/Reload-Apps/gifi-sdk>. Gifi itself is
+closed source; this client is not, because you should be able to read what you
+are running against your own data.
 
 Zero runtime dependencies. Written against the published contract at
 <https://gifi.ai/openapi.json>.
