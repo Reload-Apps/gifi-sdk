@@ -1,0 +1,57 @@
+{
+  "name": "gifi-sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript client and CLI for the Gifi API \u2014 inspect, clean and rewrite AI provenance marks in text and files.",
+  "keywords": [
+    "gifi",
+    "ai-watermark",
+    "synthid",
+    "c2pa",
+    "exif",
+    "metadata",
+    "unicode",
+    "zero-width",
+    "mcp"
+  ],
+  "homepage": "https://gifi.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reload-Apps/gifi-sdk.git"
+  },
+  "bugs": {
+    "url": "https://gifi.ai/contact"
+  },
+  "license": "Apache-2.0",
+  "author": "RELOAD TECHNOLOGIES - FZCO",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "bin": {
+    "gifi": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^20.0.0",
+    "vitest": "^4.1.0"
+  }
+}
